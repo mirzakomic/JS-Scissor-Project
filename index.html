@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="wrap">
+    <form onsubmit="satzErkennen(); return false">
+        <label for="zutrennende">Zu trennende Zeichenkette:</label>
+        <input name="zutrennende" id="input-satz" type="text" value="">
+        <label for="trennwort">Zeichenkette für die Trennungsposition:</label>
+        <input name="wort" id="input-trennwort" type="text">
+        <div class="radiobtn">
+        <label for="davor">Davor</label>
+        <input type="radio" name="radio" id="davor" checked>
+        <label for="davor">Danach</label>
+        <input type="radio" name="radio" id="danach">
+        </div>
+        <button type="submit">Daten absenden</button>
+        </form>
+        
+        <div class="ausgabe">
+            <h2>Ausgabe</h2>
+            <div class="wr">
+            <article id="leftCont">
+                <h3>Vorderer Teil:</h3>
+                <div id="left"></div>
+            </article>
+            <article id="rightCont">
+                <h3>Hinterer Teil:</h3>
+                <div id="right"></div>
+            </article>
+        </div>
+        </div>
+        </section>
+    </div>
+    </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
